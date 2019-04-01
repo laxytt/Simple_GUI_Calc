@@ -189,20 +189,20 @@ namespace WindowsFormsApp2
         private void wynik_Click(object sender, EventArgs e)
         {
            
-            double secondNumber;                                                //zmienna do przechowania 2-giej liczby
-            double result;                                                      // zmienna do przechowania wyniku
+            double secondNumber;                                            
+            double result;                                                    
 
             try
             {
-                secondNumber = Convert.ToDouble(textBox1.Text);                    // zamienia drugą podana liczbę na double i zapisuje w zmiennej secondNumber
+                secondNumber = Convert.ToDouble(textBox1.Text);                     
 
 
-                if (operation == "+")                                               // Jeśli operacją było dodawanie to:
+                if (operation == "+")                                               
                 {
 
-                    result = (firstNumber + secondNumber);                          // zapisuje w results dodwanie 2 zmiennych
-                    textBox1.Text = Convert.ToString(result);                       // konwertuje do stringa i wyswietla w textBox wynik
-                    firstNumber = result;                                        //Zapisuje wynik w firstNumber, do kolejnych operacji
+                    result = (firstNumber + secondNumber);                          
+                    textBox1.Text = Convert.ToString(result);                       
+                    firstNumber = result;                                        
                 }
                 if (operation == "-")
                 {
@@ -244,7 +244,7 @@ namespace WindowsFormsApp2
             }
             catch
             {
-                textBox1.Text = "Błędne dane";                          //  textBox1.Text = "Błędne dane!";
+                textBox1.Text = "Błędne dane";
             }
         }
 
@@ -253,8 +253,8 @@ namespace WindowsFormsApp2
             
 
             
-                firstNumber = Convert.ToDouble(textBox1.Text);                      // zamienia stringa z textBoxa na double i zapisuje w zmiennej firstNumber
-                textBox1.Text = "0";                                                // zeruje pole na drugą zmienną
+                firstNumber = Convert.ToDouble(textBox1.Text);                      
+                textBox1.Text = "0";                                               
                 operation = "+";
                 
                 
